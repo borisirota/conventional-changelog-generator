@@ -32,12 +32,10 @@
     "code-check": "npm run lint -s && npm run style -s",
     "pretest": "npm run code-check -s",
     "test": "istanbul cover _mocha",
-    "docs": "jsdoc2md lib/**/*.js -t readme.hbs | jsdoc2md-anchors > README.md",
     "watch": "watch 'npm run code-check -s' lib/",
     "security": "nsp audit-package",
-    "prerelease": "npm run docs -s && git add README.md && git commit --allow-empty -m \"readme update\"",
     "release": "npm version patch -m 'Bumped to %s'",
-    "postrelease": "git push && git push --tags"
+    "postrelease": "git push && git push --tags && npm publish"
   },
   "devDependencies": {
     "chai": "^1.10.0",
