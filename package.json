@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cli wrapper to the conventional-changelog module",
   "author": "Boris Sirota <borisirota@gmail.com>",
   "license": "MIT",
