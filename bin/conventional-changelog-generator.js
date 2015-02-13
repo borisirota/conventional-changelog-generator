@@ -25,7 +25,7 @@ function getPackageRepository (pkg) {
 }
 
 commander
-    .option('-r, --repository', 'hosting repository [github, bitbucket]', 'github')
+    .option('-r, --repository <repository>', 'hosting repository [github, bitbucket]', 'github')
     .parse(process.argv);
 
 var options = {
